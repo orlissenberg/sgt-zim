@@ -1,12 +1,13 @@
 #SGT-ZIM
 
-##Setup
+###Setup
 
     mkdir .vim
     git clone https://github.com/orlissenberg/sgt-zim .vim
     ln -s ~/.vim/.vimrc ~/.vimrc
+    ln -s ~/.vim/moredots/.zshrc ~/.zshrc
 
-## References
+### References
 
 [Pathogen](https://github.com/tpope/vim-pathogen)
 
@@ -42,3 +43,11 @@ A Git wrapper so awesome, it should be illegal.
 Default configuration:
 
     /usr/share/vim/vim72
+    
+### Tutorials
+
+[VIM Casts](http://vimcasts.org/episodes/archive)
+
+[VIM Classes](https://github.com/shawncplus/vim-classes)
+
+
