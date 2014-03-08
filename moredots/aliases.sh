@@ -16,7 +16,9 @@ alias mysqlroot="mysql -u root -p"
 alias stash="cd ~/Stash/"
 alias personal="cd ~/Personal/Projects"
 
-alias vagrantup="vagrant up; vagrant ssh"
+alias vup="vagrant up; vagrant ssh"
+alias vhalt="vagrant halt"
+
 alias updatedb="sudo updatedb"
 alias macupdatedb="sudo /usr/libexec/locate.updatedb"
 
