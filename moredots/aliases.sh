@@ -18,17 +18,21 @@ alias personal="cd ~/Personal/Projects"
 
 alias vup="vagrant up; vagrant ssh"
 alias vhalt="vagrant halt"
+alias vrun="VboxManage list runningvms"
 
 alias updatedb="sudo updatedb"
 alias macupdatedb="sudo /usr/libexec/locate.updatedb"
 
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[0-9]\+\)\|[a-fA-F0-9:]\+\)' | awk '{ sub(/inet6? (addr:)? ?/, \"\"); print }'"
 alias netstats="sudo netstat -tulpn"
 
 source $SGT_ZIM/moredots/artisan.sh
 source $SGT_ZIM/moredots/mysql.sh
+
+function rpm_search () {
+    sudo rpm -qa | grep $1
+}
 
 function enable_run_level () {
     if [[ $# -eq 1 ]]; then

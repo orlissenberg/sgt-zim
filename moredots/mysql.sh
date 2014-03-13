@@ -1,9 +1,10 @@
-alias mysql-show-dbs="mysql -u root -p -e 'show databases;' -s -N"
-alias mysql-show-users="mysql --user=root -p -e 'select user, host from user;' --database=mysql"
+alias mysql_show_dbs="mysql -u root -p -e 'show databases;' -s -N"
+alias mysql_show_users="mysql --user=root -p -e 'select user, host from user;' --database=mysql"
 
 function mysql_db_user_host () {
     USER="root"
-    read -p "Password for $USER: " PASS
+    echo "Password for $USER:"
+    read PASS
 
     HASDB=$(mysql -u $USER --password=$PASS -e "show databases like '$1';" -s -N);
     if [[ $HASDB != $1 ]]; then
@@ -21,6 +22,8 @@ function mysql_has_db () {
 }
 
 function mysql_user_setpassword () {
-    read -p "Password for $1@$2: " PASS
+    echo "Password for $1@$2:"
+    read PASS
+
     mysql --user=root -p -e "SET PASSWORD FOR '"$1"'@'"$2"' = PASSWORD('"$PASS"'); FLUSH PRIVILEGES;";
 }

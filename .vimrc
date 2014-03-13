@@ -11,6 +11,7 @@ set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set ff=unix
 
 map <up> <nop>
 map <down> <nop>
