@@ -2,6 +2,13 @@
 ZSH=$HOME/.oh-my-zsh
 SGT_ZIM=$HOME/.vim
 
+vhome=$(readlink -f ~/)
+if [[ $vhome = "/home/vagrant" ]]; then
+    if [[ -d /vagrant ]]; then
+        cd /vagrant
+    fi
+fi
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -42,7 +49,7 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer laravel vagrant)
+plugins=(git composer laravel4 bower fabric npm python sudo vagrant)
 
 source $ZSH/oh-my-zsh.sh
 

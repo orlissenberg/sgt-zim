@@ -5,6 +5,8 @@ alias hackzsh="vim ~/.vim/moredots/.zshrc"
 alias hackvim="vim ~/.vim/.vimrc"
 alias hackhttpd="sudo vim /etc/httpd/conf/httpd.conf"
 alias hackhosts="sudo vim /etc/hosts"
+alias hackphpini="sudo vim /etc/php.ini"
+alias hackelasticconf="sudo vim /etc/elasticsearch/elasticsearch.yml"
 
 alias serveapache="sudo service httpd restart"
 alias servees="sudo service elasticsearch restart"
@@ -15,10 +17,13 @@ alias mysqlroot="mysql -u root -p"
 
 alias stash="cd ~/Stash/"
 alias personal="cd ~/Personal/Projects"
+alias elastic="cd /usr/share/elasticsearch"
+alias elasticdata="cd /var/lib/elasticsearch"
 
 alias vup="vagrant up; vagrant ssh"
 alias vhalt="vagrant halt"
 alias vrun="VboxManage list runningvms"
+alias vssh="vagrant ssh"
 
 alias updatedb="sudo updatedb"
 alias macupdatedb="sudo /usr/libexec/locate.updatedb"
