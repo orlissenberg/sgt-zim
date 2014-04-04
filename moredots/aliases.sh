@@ -25,6 +25,12 @@ alias vhalt="vagrant halt"
 alias vrun="VboxManage list runningvms"
 alias vssh="vagrant ssh"
 
+alias phpspec="php vendor/bin/phpspec"
+alias specrun="phpspec run -v"
+alias specdes="phpspec describe"
+
+alias phpunit="php vendor/bin/phpunit"
+
 alias updatedb="sudo updatedb"
 alias macupdatedb="sudo /usr/libexec/locate.updatedb"
 

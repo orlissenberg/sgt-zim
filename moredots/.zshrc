@@ -2,10 +2,12 @@
 ZSH=$HOME/.oh-my-zsh
 SGT_ZIM=$HOME/.vim
 
-vhome=$(readlink -f ~/)
-if [[ $vhome = "/home/vagrant" ]]; then
-    if [[ -d /vagrant ]]; then
-        cd /vagrant
+if [[ !  "$(uname)" == "Darwin" ]]; then
+    vhome=$(readlink -f ~/)
+    if [[ $vhome = "/home/vagrant" ]]; then
+        if [[ -d /vagrant ]]; then
+            cd /vagrant
+        fi
     fi
 fi
 

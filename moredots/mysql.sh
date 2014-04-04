@@ -2,7 +2,7 @@ alias mysql_show_dbs="mysql -u root -p -e 'show databases;' -s -N"
 alias mysql_show_users="mysql --user=root -p -e 'select user, host from user;' --database=mysql"
 
 function mysql_db_user_host () {
-    USER="root"
+    read USER
     echo "Password for $USER:"
     read PASS
 
