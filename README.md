@@ -43,11 +43,20 @@ A Git wrapper so awesome, it should be illegal.
 Default configuration:
 
     /usr/share/vim/vim72
-    
+
 ### Tutorials
 
 [VIM Casts](http://vimcasts.org/episodes/archive)
 
 [VIM Classes](https://github.com/shawncplus/vim-classes)
 
+## Known Issues
+
+### Error #941
+
+    TypeError: setup() got an unexpected keyword argument 'can_replace_pyeval'
+
+[Error #941](https://github.com/Lokaltog/powerline/issues/941)
+
+    sudo pip uninstall powerline
 

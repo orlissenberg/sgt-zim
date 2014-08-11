@@ -41,6 +41,12 @@ alias netstats="sudo netstat -tulpn"
 source $SGT_ZIM/moredots/artisan.sh
 source $SGT_ZIM/moredots/mysql.sh
 
+if [[ -f $SGT_ZIM/moredots/local.sh ]]
+    then
+    source $SGT_ZIM/moredots/local.sh
+    alias hacklocal="vim ~/.vim/moredots/local.sh"
+fi
+
 function rpm_search () {
     sudo rpm -qa | grep $1
 }
@@ -48,7 +54,7 @@ function rpm_search () {
 function enable_run_level () {
     if [[ $# -eq 1 ]]; then
         sudo chkconfig --level 2345 $1 on
-    elif [[ $# -eq 2 ]]; then 
+    elif [[ $# -eq 2 ]]; then
         sudo chkconfig --level $2 $1 on
     else
         echo 'Not enough arguments.'
@@ -58,7 +64,7 @@ function enable_run_level () {
 function disable_run_level () {
     if [[ $# -eq 1 ]]; then
         sudo chkconfig --level 2345 $1 off
-    elif [[ $# -eq 2 ]]; then 
+    elif [[ $# -eq 2 ]]; then
         sudo chkconfig --level $2 $1 off
     else
         echo 'Not enough arguments.'
