@@ -2,6 +2,9 @@
 ZSH=$HOME/.oh-my-zsh
 SGT_ZIM=$HOME/.vim
 
+# GOROOT=/usr/local/opt/go
+# GOPATH=$HOME/go
+
 if [[ !  "$(uname)" == "Darwin" ]]; then
     vhome=$(readlink -f ~/)
     if [[ $vhome = "/home/vagrant" ]]; then
@@ -51,7 +54,7 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git composer laravel4 bower fabric npm python sudo vagrant)
+plugins=(composer laravel4 bower fabric npm python sudo vagrant)
 
 source $ZSH/oh-my-zsh.sh
 

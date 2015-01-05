@@ -1,5 +1,12 @@
 alias clr="clear"
 
+alias ave="ansible-vault encrypt"
+alias avd="ansible-vault decrypt"
+alias aplay="ansible-playbook"
+
+alias eyamle="eyaml encrypt"
+alias eyamld="eyaml decrypt"
+
 alias hackalias="vim ~/.vim/moredots/aliases.sh"
 alias hackzsh="vim ~/.vim/moredots/.zshrc"
 alias hackvim="vim ~/.vim/.vimrc"
