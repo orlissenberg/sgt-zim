@@ -9,12 +9,13 @@ let g:powerline_pyeval = 'pyeval'
 
 set number
 set list
-"set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ ,eol:¬
 set smartindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set ff=unix
+set backspace=indent,eol,start
 
 "map <up> <nop>
 "map <down> <nop>
