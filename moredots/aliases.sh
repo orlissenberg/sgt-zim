@@ -14,6 +14,7 @@ alias hackhttpd="sudo vim /etc/httpd/conf/httpd.conf"
 alias hackhosts="sudo vim /etc/hosts"
 alias hackphpini="sudo vim /etc/php.ini"
 alias hackelasticconf="sudo vim /etc/elasticsearch/elasticsearch.yml"
+alias hackssh="vim ~/.ssh/config"
 
 alias serveapache="sudo service httpd restart"
 alias servees="sudo service elasticsearch restart"

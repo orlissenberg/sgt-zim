@@ -1,4 +1,5 @@
 # Path to your oh-my-zsh configuration.
+export PATH="/usr/local/sbin:$PATH"
 ZSH=$HOME/.oh-my-zsh
 SGT_ZIM=$HOME/.vim
 
@@ -54,7 +55,7 @@ ZSH_THEME="candy"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(composer laravel4 bower fabric npm python sudo vagrant)
+plugins=(yarn composer laravel4 bower fabric npm python sudo vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -62,7 +63,7 @@ source $ZSH/oh-my-zsh.sh
 
 source $SGT_ZIM/moredots/aliases.sh
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # # Preferred editor for local and remote sessions
